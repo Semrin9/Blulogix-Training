@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,200;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    text-align: center;
+}
+
+.fa-user-tie {
+    font-size: 14rem;
+    margin-bottom: 2%;
+}
+
+.container h3 {
+    color: #ef5e4a;
+}
+
+.form-box {
+    position: relative; 
+    top: 22px;
+    width: 500px;
+    height: 280px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.form-box p{
+    margin: 4% 0 0 5%;
+    color: #00968b;
+    font-family: serif;
+    font-weight: 700;
+} 
+
+.form-box label{
+    color: #00968b;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: serif;
+    pointer-events: none;
+}
+
+.form-box button{
+    margin: 6% 0 0 5%;
+    background-color: #ef5e4a;
+    font-family: serif;
+    font-size: 1.1em;
+    color: #fff;
+    padding: 2% 12% 2% 7%;
+    border: none;
+    cursor: pointer;
+
+}
+
+.input-box {
+    margin: 4% 0 0 5%;
+    width: 100%;
+    height: 50px;
+}
+
+.input-box input{
+    width: 85%;
+    height: 75%;
+    font-family: serif;
+    font-size: 1em;
+    padding-left: 4%;
+    border: 1px groove #cbc9c9;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .fa-user-tie {
+        font-size: 10rem;
+    }
+
+    .form-box {
+        width: 100%;
+        height: 240px;
+    }
+
+    .form-box button {
+        padding: 2% 10% 2% 5%;
+        font-size: 0.9rem;
+    }
+
+    .form-box p{
+        font-size: 1rem;
+    }
+
+    .form-box label{
+        font-size: 0.9em;
+    }
+
+    .input-box input {
+        width: 80%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fa-user-tie {
+        font-size: 8rem;
+    }
+
+    .form-box {
+        width: 100%;
+    }
+
+    .form-box button {
+        padding: 2% 8% 2% 4%;
+    }
+
+    .input-box input {
+        width: 80%;
+    }
+}

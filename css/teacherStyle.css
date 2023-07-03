@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    background-color: #00968b;
+    color: #fff;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 5rem;
+    cursor: pointer;
+}
+
+.navbar-item a {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-item i {
+    font-size: 1.6rem;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #1aa197;
+    margin-bottom: 5px;
+}
+
+.navbar-item.logout {
+    margin-left: auto;
+}
+
+.navbar-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.teachers {
+    background-color: #ef5e4a;
+    border-radius: 5%;
+}
+
+.teachers i {
+    background-color: #ef5e4a;
+}
+
+.navbar-item:hover {
+    background-color: #ef5e4a;
+    border-radius: 5%;
+}
+
+.navbar-item:hover i {
+    background-color: #ef5e4a;
+}
+
+
+/* Table */
+
+.teacher {
+    margin: 2rem 0 1rem 1rem;
+    color: #00968b;
+    border-left: 3px solid #ef5e4a;
+    padding-left: 0.5rem;
+}
+
+.table-container {
+    margin-left: 1rem;
+    overflow-x: auto; 
+    width: 100%; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 98%;
+}
+
+table,
+td,
+th {
+    border: 1px solid #00968b;
+}
+
+td,
+th {
+    padding: 0.35rem 0 0.35rem 0.3rem;
+}
+
+th {
+    background-color: #b2dfdb;
+    color: #015a54;
+}
+
+td {
+    color: #015a54;
+}
+
+td button {
+    margin: auto;
+    display: block;
+    border: none;
+    background-color: #00968b;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.3rem;
+}
+
+
+/* ************ */
+
+.addButton {
+    margin: 0 0 2rem 1rem;
+    padding: 0.4rem 2rem;
+    border-radius: 0%;
+    background-color: #ef5e4a;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Form */
+
+.addForm {
+    margin: 0 0.5rem 0 1rem;
+    border: 2px solid #ccd0d1;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form div {
+    flex-grow: 1;
+    flex-basis: 100%;
+    flex-basis: 300px;
+    margin-bottom: 1rem;
+}
+
+.addForm h4 {
+    width: 92px;
+    margin-top: -45px;
+    padding: 0 0 1.2rem 5px;
+    background: white;
+    color: #ef5e4a;
+}
+
+form div input {
+    width: 100%;
+    width: 25rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+form .fa-person-chalkboard {
+    font-size: 7.5rem;
+    margin-left: 6rem;
+    margin-top: -0.8rem;
+    color: #00968b;
+}
+
+form button {
+    border-radius: 0;
+    background-color: #ef5e4a;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    margin: 1.2rem 0.3rem 0 0;
+    padding: 0.4rem 2rem;
+}
+
+.firstName,.material {
+    color: #00968b;
+}
+
+.hide-add-form {
+    display: none;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 7rem;
+    padding: 2%;
+    text-align: center;
+    background-color: #00968b;
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #ef5e4a;
+}
+
+.about {
+    margin-right: 0.3rem;
+    border-right: 1px solid #fff;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+    .teacher {
+        margin: 1rem 0 0.5rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    .table-container {
+        margin-left: 0.5rem;
+    }
+
+    table {
+        margin-left: 0.5rem;
+    }
+
+    td,
+    th {
+        padding: 0.3rem 0.1rem;
+        font-size: 0.9rem;
+    }
+
+    td button {
+        padding: 0.15rem;
+        font-size: 0.9rem;
+    }
+
+    .addButton {
+        margin: 0 0 1rem 0.5rem;
+        font-size: 0.9rem;
+        padding: 0.3rem 1.5rem;
+    }
+
+    .addForm h4 {
+        width: auto;
+        margin-top: 0;
+    }
+
+    form div {
+        flex-basis: 100%; 
+        max-width: none;
+    }
+
+    form div input {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    form .fa-person-chalkboard {
+        font-size: 5rem;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    form button {
+        margin: 1.2rem 0 0 0;
+        padding: 0.3rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .teacher {
+        margin: 1rem 0 0.5rem 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    table {
+        margin-left: 0.5rem;
+    }
+
+    td, th {
+        padding: 0.3rem 0.1rem;
+        font-size: 0.9rem;
+    }
+
+    td button {
+        padding: 0.15rem;
+        font-size: 0.9rem;
+    }
+
+    .addButton {
+        margin: 0 0 1rem 0.5rem;
+        font-size: 0.9rem;
+        padding: 0.3rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-list {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-item {
+        flex: 0 0 50%;
+    }
+
+    .navbar-item.logout {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    td,
+    th {
+        padding: 0.3rem 0.2rem;
+    }
+
+    td button {
+        padding: 0.2rem;
+    }
+
+    .addForm h4 {
+        width: auto;
+        margin-top: 0;
+    }
+
+    form div {
+        flex-basis: 100%; 
+        max-width: none;
+    }
+
+    form .fa-person-chalkboard {
+        font-size: 5rem;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    form button {
+        margin: 1.2rem 0 0 0;
+        padding: 0.3rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar-list {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar-item:not(:last-child) {
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    .navbar-item {
+        flex: 0 0 calc(33.33% - 30px);
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+    .navbar-list {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar-item:not(:last-child) {
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    .navbar-item {
+        flex: 0 0 calc(25% - 30px);
+    }
+}
+
+@media screen and (min-width: 1401px) {
+    .table-container {
+        max-width: 1400px;
+    }
+}
+
+@media(max-width: 1617px) {
+    form .fa-person-chalkboard {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 1660px) {
+    form .fa-person-chalkboard {
+        margin-top: 1rem;
+    }
+}

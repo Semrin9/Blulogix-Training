@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher</title>
+
+    <link rel="stylesheet" href="../css/teacherStyle.css">
+
+    <!-- font awesome icons cdn -->
+    <script src="https://kit.fontawesome.com/8434cc5fbe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item dashboard">
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="navbar-item parents">
+                    <a href="parent.html">
+                        <i class="fas fa-user"></i>
+                        <span>Parent</span>
+                    </a>
+                </li>
+
+                <li class="navbar-item teachers">
+                    <a href="teacher.html">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Teacher</span>
+                    </a>
+                </li>
+
+                <li class="navbar-item student">
+                    <a href="student.html">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Student</span>
+                    </a>
+                </li>
+
+                <li class="navbar-item admin">
+                    <a href="admin.html">
+                        <i class="fas fa-user-cog"></i>
+                        <span>Admin</span>
+                    </a>
+                </li>
+
+                <li class="navbar-item logout">
+                    <a href="../logIn.html">
+                        <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="teacher">Teachers</h2>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Class</th>
+                <th>Material</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Irene</td>
+                    <td>Alder</td>
+                    <td>64565645645</td>
+                    <td>ireneAdler30032016@gmail.com</td>
+                    <td>384 Mayfair Street Union, NJ 07083</td>
+                    <td>C</td>
+                    <td>C++</td>
+                    <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>Watson</td>
+                    <td>76868567546</td>
+                    <td>Johnwatson30032016@gmail.com</td>
+                    <td>385 Mayfair Street Union, NJ 08546</td>
+                    <td>A</td>
+                    <td>PHP</td>
+                    <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mycroft</td>
+                    <td>Holmes</td>
+                    <td>34663422767</td>
+                    <td>Mycroftholmes30032016@gmail.com</td>
+                    <td>386 Mayfair Street Union, NJ 07083</td>
+                    <td>E</td>
+                    <td>Java</td>
+                    <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Root</td>
+                    <td>Root</td>
+                    <td>7894613</td>
+                    <td>root@root.com</td>
+                    <td>Amman test1</td>
+                    <td>ASD</td>
+                    <td>ASDFED</td>
+                    <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Root</td>
+                    <td>Root</td>
+                    <td>Root</td>
+                    <td>root@root.com</td>
+                    <td>Amman test1</td>
+                    <td>ASSD</td>
+                    <td>ASDFE</td>
+                    <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>test</td>
+                    <td>root teacher</td>
+                    <td>7894646 2</td>
+                    <td>test@test.com</td>
+                    <td>Test add new teacher address</td>
+                    <td>ASDA</td>
+                    <td>wdfefe</td>
+                    <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>dfgsdfg</td>
+                    <td>sdfgsdfg</td>
+                    <td>dfgsdfg</td>
+                    <td>dfgsdfg</td>
+                    <td>dfgsdfg</td>
+                    <td>dfgsdfg</td>
+                    <td>dfgsdfg</td>
+                    <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+
+    <button class="addButton">+ Add</button>
+
+    <div class="addForm hide-add-form">
+        <h4>Add teacher</h4>
+        <form action="" method="post">
+            <div>
+                <label for="firstName" class="firstName">First name:</label>
+                <br>
+                <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="Email" name="email" placeholder="email" required>
+                <br>
+                <label for="address">Address:</label>
+                <br>
+                <input type="text" id="Address" name="address" placeholder="address" required>
+            </div>
+
+            <div>
+                <label for="lastName">Last name:</label>
+                <br>
+                <input type="text" id="lastName" name="lastName" placeholder="name" required>
+                <br>
+                <label for="class">Class:</label>
+                <br>
+                <input type="text" id="Class" name="class" placeholder="Class" required>
+            </div>
+
+            <div>
+                <label for="phonenumber">Phone Number:</label>
+                <br>
+                <input type="text" id="phoneNumber" name="phonenumber" placeholder="name" required>
+                <br>
+                <label for="Material" class="material">Material:</label>
+                <br>
+                <input type="text" id="Material" name="material" placeholder="Material" required>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-person-chalkboard"></i><br>
+                <br>
+                <button><i class="fa-solid fa-download"></i> Save</button>
+                <button><i class="fa-solid fa-x"></i> Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p><a href="" class="about">About us </a> <a href="contactUs.html">Contact us</a></p> <br>
+        <p>Copyright © 2016 BluLogix, LLC All Rights Reserved</p>
+    </footer>
+
+    <script src="../JavaScript/script.js"></script>
+
+</body>
+
+</html>

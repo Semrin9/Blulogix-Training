@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="../css/contactUsStyle.css">
+    
+    <!-- font awesome icons cdn -->
+    <script src="https://kit.fontawesome.com/8434cc5fbe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item dashboard">
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="navbar-item parents">
+                    <a href="parent.html">
+                        <i class="fas fa-user"></i>
+                        <span>Parent</span>
+                    </a>
+                </li>
+
+                <li class="navbar-item teachers">
+                    <a href="teacher.html">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Teacher</span>
+                    </a>
+                </li>
+
+                <li class="navbar-item student">
+                    <a href="student.html">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Student</span>
+                    </a>
+                </li>
+
+                <li class="navbar-item admin">
+                    <a href="admin.html">
+                        <i class="fas fa-user-cog"></i>
+                        <span>Admin</span>
+                    </a>
+                </li>
+
+                <li class="navbar-item logout">
+                    <a href="../logIn.html">
+                        <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contactInfo">
+
+        <div class="addressInfo">
+            <i class="fa-solid fa-location-dot icon"></i>
+        </div>
+
+        <div class="info">
+            <h5>Address:</h5>
+            <p>737 Walker Road Great Falls, VA 22066</p>
+        </div>
+
+        <div class="phoneInfo">
+            <i class="fa-solid fa-phone icon"></i>
+        </div>
+
+        <div class="info">
+            <h5>Phone:</h5>
+            <p>443.333.4100</p>
+        </div>
+
+        <div class="emailInfo">
+            <i class="fa-solid fa-envelope-open-text icon"></i>
+        </div>
+
+        <div class="info">
+            <h5>Email:</h5>
+            <p>info@BluLogix.com</p>
+        </div>
+
+        <div class="faxInfo">
+            <i class="fa-solid fa-print"></i>
+        </div>
+
+        <div class="info">
+            <h5>Fax</h5>
+            <p>443.333.4101</p>
+        </div>
+    </div>
+
+    <h2 class="contactUs">Contact Us</h2>
+
+    <div class="form-box">
+
+        <form action="#">
+            <div class="input-box">
+                <label for="message">Your message*</label><br>
+                <textarea name="message" id="Message" cols="88" rows="10"
+                    placeholder="Type here to send us a message ..."></textarea>
+            </div>
+
+            <div class="input-box">
+                <label for="firstName">First name*</label>
+                <input type="text" id="FirstName" name="firstName" placeholder="Your name (required)" required>
+            </div>
+
+            <div class="input-box">
+                <label for="lastName">Last name*</label>
+                <input type="text" id="LastName" name="lastName" placeholder="Your name (required)" required>
+            </div>
+
+            <div class="input-box">
+                <label for="email">Your Email*</label>
+                <input type="text" id="Email" name="email" placeholder="Your email address (required)" required>
+            </div>
+
+            <button type="submit" class="btn" value="send">Send</button>
+        </form>
+    </div>
+
+    <footer>
+        <p><a href="" class="about">About us </a> <a href="contactUs.html">Contact us</a></p> <br>
+        <p>Copyright © 2016 BluLogix, LLC All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

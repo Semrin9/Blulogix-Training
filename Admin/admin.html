@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <!-- font awesome icons cdn -->
+    <script src="https://kit.fontawesome.com/8434cc5fbe.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/adminStyle.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item dashboard">
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="navbar-item parents">
+                    <a href="parent.html">
+                        <i class="fas fa-user"></i>
+                        <span>Parent</span>
+                    </a>
+                </li>
+                <li class="navbar-item teachers">
+                    <a href="teacher.html">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Teacher</span>
+                    </a>
+                </li>
+                <li class="navbar-item student">
+                    <a href="student.html">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Student</span>
+                    </a>
+                </li>
+                <li class="navbar-item admin">
+                    <a href="admin.html">
+                        <i class="fas fa-user-cog"></i>
+                        <span>Admin</span>
+                    </a>
+                </li>
+                <li class="navbar-item logout">
+                    <a href="../logIn.html">
+                        <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="admins">Admin</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>userName</th>
+                    <th>Action</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>John</td>
+                        <td>test</td>
+                        <td>852147963</td>
+                        <td>t@y.com</td>
+                        <td>usa</td>
+                        <td>test</td>
+                        <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>test</td>
+                        <td>test</td>
+                        <td>951847632</td>
+                        <td>root@root.com</td>
+                        <td>amman</td>
+                        <td>root</td>
+                        <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Yousef</td>
+                        <td>Shamieh</td>
+                        <td>078945666</td>
+                        <td>yousefshamieh@gmail.com</td>
+                        <td>Amman</td>
+                        <td>yshamieh</td>
+                        <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Irene</td>
+                        <td>Adler</td>
+                        <td>789546123</td>
+                        <td>ireneAdler30032016@gmail.com</td>
+                        <td>USA</td>
+                        <td>iadler</td>
+                        <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>sdf</td>
+                        <td>gsdfvgbs</td>
+                        <td>fgsdfg</td>
+                        <td>dfvsd</td>
+                        <td>sdfgvsdfgsdfg</td>
+                        <td>fgsd</td>
+                        <td><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <button class="addButton">+ Add</button>
+
+        <div class="addForm hide-add-form">
+            <h4>Add teacher</h4>
+            <form action="" method="post">
+                <div>
+                    <label for="userName" class="userName">User name:</label>
+                    <br>
+                    <input type="text" id="UserName" name="userName" placeholder="User name" required>
+                    <br>
+                    <label for="password">Password:</label>
+                    <br>
+                    <input type="password" id="Password" name="password" placeholder="password" required>
+                    <br>
+                    <label for="confirmPassword">Confirm password:</label>
+                    <br>
+                    <input type="password" id="ConfirmPassword" name="confirmPassword" placeholder="Confirm Password"
+                        required>
+                </div>
+                <div>
+                    <label for="phonenumber">Phone Number:</label>
+                    <br>
+                    <input type="text" id="phoneNumber" name="phonenumber" placeholder="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="Email" name="email" placeholder="Email" required>
+                    <br>
+                    <label for="address">Address:</label>
+                    <br>
+                    <input type="text" id="Address" name="address" placeholder="Address" required>
+                </div>
+                <div>
+                    <label for="firstName">First name:</label>
+                    <br>
+                    <input type="text" id="FirstName" name="firstName" placeholder="First Name" required>
+                    <br>
+                    <label for="lastName">Last name:</label>
+                    <br>
+                    <input type="text" id="LastName" name="lastName" placeholder="Last Name" required>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-gear"></i><br>
+                    <br>
+                    <button><i class="fa-solid fa-download"></i> Save</button>
+                    <button><i class="fa-solid fa-x"></i> Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <p><a href="" class="about">About us </a> <a href="contactUs.html">Contact us</a></p> <br>
+            <p>Copyright © 2016 BluLogix, LLC All Rights Reserved</p>
+        </footer>
+
+        <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>
