@@ -109,6 +109,10 @@
 
 /* Form */
 
+form {
+    margin-bottom: 7rem;
+}
+
 .form-box {
     margin-left: 1rem;
 }
@@ -156,6 +160,10 @@ form #Message {
 /* Footer */
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     margin-top: 7rem;
     padding: 2%;
     text-align: center;

@@ -156,6 +156,7 @@ td button {
 form {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 7rem;
 }
 
 form div {
@@ -207,11 +208,14 @@ form button {
 /* Footer */
 
 footer {
-    margin-top: 7rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     padding: 2%;
     text-align: center;
     background-color: #00968b;
-    color: #fff;
+    color: #fff;    
 }
 
 footer a {

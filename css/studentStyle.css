@@ -141,6 +141,10 @@ td button {
 
 /* Form */
 
+form {
+    margin-bottom: 7rem;
+}
+
 .addForm {
     margin: 0 0.5rem 0 1rem;
     border: 2px solid #ccd0d1;
@@ -197,7 +201,10 @@ form button {
 /* Footer */
 
 footer {
-    margin-top: 7rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     padding: 2%;
     text-align: center;
     background-color: #00968b;
