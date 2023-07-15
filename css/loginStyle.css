@@ -16,9 +16,10 @@ body {
     text-align: center;
 }
 
-.fa-user-tie {
+.container .fa-user-tie {
     font-size: 14rem;
     margin-bottom: 2%;
+    /* font-weight: 400; */
 }
 
 .container h3 {
@@ -79,6 +80,11 @@ body {
     font-size: 1em;
     padding-left: 4%;
     border: 1px groove #cbc9c9;
+}
+
+.input-box input:focus {
+    outline: none;
+    border: 2px solid #3898ec;
 }
 
 
